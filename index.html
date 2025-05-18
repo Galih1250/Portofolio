@@ -170,7 +170,7 @@
     <!-- Contact -->
     <section id="contact" class="mt-24 max-w-3xl mx-auto text-center">
   <h2 class="text-4xl font-bold text-emerald-600 mb-8">Dont Contact Me</h2>
-  <p class="text-gray-50 mb-6">Please dont reach out for collaborations, freelance projects, but please (try) say hello... Im lonely af</p>\
+  <p class="text-gray-50 mb-6">Please dont reach out for collaborations, freelance projects, but please (try) say hello... Im lonely af</p>
   <form class="bg-emerald-300 p-8 rounded-lg shadow-lg max-w-lg mx-auto relative hover:opacity-0"> <!-- relative here -->
     <div class="mb-4 text-left">
       <label for="name" class="block text-gray-700 font-semibold mb-2">Name</label>
@@ -272,8 +272,22 @@
       button.style.left = `${randomX}px`;
       button.style.top = `${randomY}px`;
       button.style.transform = "translate(0, 0)";
-    });
-  }
+    })
+  };
+
+  const thoughts = [
+    "Why write clean code when you can write code that only *you* understand?",
+    "Commit messages are for cowards.",
+    "If it works, don't touch it. If it doesn't, blame the keyboard.",
+    "code is like humor. When you have to explain it, it's bad.",
+    "I spent too much time writing code that didn't work.",
+    "Always code as if the person who ends up maintaining your code will be a violent psychopath who knows where you live.",
+    "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+    "Skill Issue",
+    "What a waste of time",
+    "Why are you here?",
+  ];
+  document.getElementById("devThought").textContent = thoughts[Math.floor(Math.random() * thoughts.length)];
   </script>
 </body>
 </html>
