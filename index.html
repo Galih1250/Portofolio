@@ -30,7 +30,6 @@
 </head>
 
 <body class="bg-gray-900 text-gray-900">
-
   <header class="bg-blue-300 fixed top-0 left-0 w-full shadow-md z-30">
     <div class="container mx-auto flex items-center justify-between p-4 md:p-6">
       <a href="#hero" class="text-2xl font-bold text-indigo-600 hover:text-indigo-800 transition" onmouseover="play('audio2');" onmouseout="stop('audio2');" >Galih</a>
@@ -49,12 +48,13 @@
       <a href="#contact" class="block py-2 text-gray-700 font-medium hover:text-indigo-600 transition">Contact</a>
     </nav>
   </header>
-<p id="devThought" class="text-sm italic mt-2 text-indigo-300"></p>
-  <main class="pt-24 container mx-auto px-6 md:px-12">
+
 
     <!-- Hero -->
    <section id="hero" class="min-h-[70vh] flex flex-col md:flex-row items-center justify-center md:justify-between space-y-10 md:space-y-0 md:space-x-12 relative overflow-hidden">
   <div class="max-w-xl text-center md:text-left">
+  <main class="pt-24 container mx-auto px-6 md:px-12">
+
     <h1 class="text-5xl font-extrabold text-indigo-700 mb-4 animate-bounce">
       Hi, I’m Bagja Galih Wiguna
     </h1>
@@ -62,7 +62,8 @@
       A silly dev creating silly and goofy web experiences. I love
       <del>scrolling facebook</del> code useless websites and making interesting problems.
     </p>
-
+    
+    <p id="devThought" class="text-sm italic mt-2 text-indigo-300"></p>
     <!-- This space intentionally left for normal link fallback if needed -->
   </div>
 
@@ -272,8 +273,8 @@
       button.style.left = `${randomX}px`;
       button.style.top = `${randomY}px`;
       button.style.transform = "translate(0, 0)";
-    })
-  };
+    });
+  }
 
   const thoughts = [
     "Why write clean code when you can write code that only *you* understand?",
